@@ -33,23 +33,42 @@
 ;;; Code:
 
 (deftheme undersea "Theme describe UnderSea.")
-(custom-theme-set-faces 'undersea
-                        '(default ((t (:foreground "#e7e7e7" :background "#2c444d" ))))
-                        '(cursor ((t (:background "#fdf4c1" ))))
-                        '(fringe ((t (:background "#3d8289" ))))
-                        '(mode-line ((t (:foreground "#fbe671" :background "#2c7281" ))))
-                        '(region ((t (:background "#3e543c" ))))
-                        '(secondary-selection ((t (:background "#496147" ))))
-                        '(font-lock-builtin-face ((t (:foreground "#00ffff" ))))
-                        '(font-lock-comment-face ((t (:foreground "#38c77b" ))))
-                        '(font-lock-function-name-face ((t (:foreground "#ffffff" ))))
-                        '(font-lock-keyword-face ((t (:foreground "#6dd8e3" ))))
-                        '(font-lock-string-face ((t (:foreground "#b3d200" ))))
-                        '(font-lock-type-face ((t (:foreground "#ffffff" ))))
-                        '(font-lock-constant-face ((t (:foreground "#d9c0a3" ))))
-                        '(font-lock-variable-name-face ((t (:foreground "#ffffff" ))))
-                        '(minibuffer-prompt ((t (:foreground "#8acbd8" :bold t ))))
-                        '(font-lock-warning-face ((t (:foreground "red" :bold t )))))
+
+(let ((class '((class color) (min-colors 89)))
+      (fg1 "#E7E7E7")
+      (bg1 "#2C444D")
+      (builtin "#00FFFF")
+      (keyword "#6DD8E3")
+      (const "#D9C0A3")
+      (comment "#38C77B")
+      (func "#FFFFFF")
+      (str "#B3D200")
+      (type "#B2B2EC")
+      (var "#FFFFFF")
+      (prep "#8D9B99")
+      (ln-color-fg "#95BBB5")
+      (ln-color-bg "#255162"))
+  (custom-theme-set-faces
+   'undersea
+   `(default ((,class (:background ,bg1 :foreground ,fg1))))
+   `(font-lock-builtin-face ((,class (:foreground ,builtin))))
+   `(font-lock-comment-face ((,class (:foreground ,comment))))
+   `(font-lock-negation-char-face ((,class (:foreground ,const))))
+   `(font-lock-reference-face ((,class (:foreground ,const))))
+   `(font-lock-constant-face ((,class (:foreground ,const))))
+   `(font-lock-doc-face ((,class (:foreground ,comment))))
+   `(font-lock-function-name-face ((,class (:foreground ,func))))
+   `(font-lock-keyword-face ((,class (:foreground ,keyword))))
+   `(font-lock-string-face ((,class (:foreground ,str))))
+   `(font-lock-type-face ((,class (:foreground ,type ))))
+   `(font-lock-variable-name-face ((,class (:foreground ,var))))
+   `(font-lock-preprocessor-face ((,class (:foreground ,prep))))
+   `(line-number ((,class (:background ,ln-color-bg , :foreground ,ln-color-fg))))))
+
+;; Test use.
+(progn
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory (buffer-file-name)))))
 
 ;;;###autoload
 (when load-file-name
