@@ -5,7 +5,7 @@
 > Theme describe UnderSea.
 
 <p align="center">
-  <img src="./etc/vs-dark-theme.png"/>
+  <img src="./etc/undersea-theme.png"/>
 </p>
 
 ## Contribution
