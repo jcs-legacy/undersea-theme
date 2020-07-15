@@ -65,11 +65,6 @@
    `(font-lock-preprocessor-face ((,class (:foreground ,prep))))
    `(line-number ((,class (:background ,ln-color-bg , :foreground ,ln-color-fg))))))
 
-;; Test use.
-(progn
-  (add-to-list 'custom-theme-load-path
-               (file-name-as-directory (file-name-directory (buffer-file-name)))))
-
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
