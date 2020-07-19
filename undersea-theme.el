@@ -72,7 +72,7 @@
 
 ;;;###autoload
 (defun undersea-theme ()
-  "Load UnderSea theme."
+  "Theme styled after undersea imagery."
   (interactive)
   (load-theme 'undersea t))
 
