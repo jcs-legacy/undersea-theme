@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # undersea-theme
-> Theme describe UnderSea.
+> Theme styled after undersea imagery.
 
 <p align="center">
   <img src="./etc/undersea-theme.png"/>
