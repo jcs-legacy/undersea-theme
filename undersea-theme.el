@@ -6,7 +6,7 @@
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; Description: Theme styled after undersea imagery.
 ;; Keyword: theme sea
-;; Package-Version: 0.1
+;; Package-Version: 0.2
 ;; Package-Requires: ((emacs "24.3"))
 ;; URL: https://github.com/jcs-elpa/undersea-theme
 
