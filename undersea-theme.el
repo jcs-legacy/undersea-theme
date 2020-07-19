@@ -1,10 +1,10 @@
-;;; undersea-theme.el --- Theme describe UnderSea
+;;; undersea-theme.el --- Theme styled after undersea imagery  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2020  Shen, Jen-Chieh
 ;; Created date 2020-07-16 00:16:27
 
 ;; Author: Shen, Jen-Chieh <jcs090218@gmail.com>
-;; Description: Theme describe UnderSea.
+;; Description: Theme styled after undersea imagery.
 ;; Keyword: theme sea
 ;; Package-Version: 0.1
 ;; Package-Requires: ((emacs "24.3"))
@@ -27,7 +27,7 @@
 
 ;;; Commentary:
 ;;
-;; Theme describe UnderSea.
+;; Theme styled after undersea imagery.
 ;;
 
 ;;; Code:
