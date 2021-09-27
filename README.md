@@ -1,10 +1,11 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![MELPA](https://melpa.org/packages/undersea-theme-badge.svg)](https://melpa.org/#/undersea-theme)
 [![MELPA Stable](https://stable.melpa.org/packages/undersea-theme-badge.svg)](https://stable.melpa.org/#/undersea-theme)
-[![CI](https://github.com/jcs-elpa/undersea-theme/actions/workflows/test.yml/badge.svg)](https://github.com/jcs-elpa/undersea-theme/actions/workflows/test.yml)
 
 # undersea-theme
 > Theme styled after undersea imagery.
+
+[![CI](https://github.com/jcs-elpa/undersea-theme/actions/workflows/test.yml/badge.svg)](https://github.com/jcs-elpa/undersea-theme/actions/workflows/test.yml)
 
 <p align="center">
   <img src="./etc/undersea-theme.png"/>
