@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "undersea-theme"
          "0.3"
          "Theme styled after undersea imagery")
